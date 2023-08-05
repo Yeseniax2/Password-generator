@@ -16,7 +16,7 @@ generateBtn.addEventListener("click", writePassword);
 function writePassword() {
  var correctprompts= getprompts(); //either true or false
  var passwordText = document.querySelector("#password");
- 
+
  if (correctprompts){ 
   var newPassword = generatePassword();
   passwordText.value = newPassword;
@@ -32,7 +32,7 @@ function generatePassword() {
   var password="";
   console.log(characterlength)
 for(var i = 0; i < characterlength; i++) {
-    var randompassword = (Math.random() * choiceofcharacter.length);
+    var randompassword = math.floor(Math.random() * choiceofcharacter.length);
    password = password + choiceofcharacter[randompassword];
 }
  return randompassword;
