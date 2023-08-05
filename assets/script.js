@@ -32,7 +32,7 @@ function generatePassword() {
   var password="";
   console.log(characterlength)
 for(var i = 0; i < characterlength; i++) {
-    var randompassword = math.floor(Math.random() * choiceofcharacter.length);
+    var randompassword = (Math.random() * choiceofcharacter.length);
    password = password + choiceofcharacter[randompassword];
 }
  return randompassword;
