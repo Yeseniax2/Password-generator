@@ -1,4 +1,4 @@
-var characterlength = 8;
+//var characterlength = 8;
 var choiceofcharacter = [];
 
 var specialcharacter = ['?', '!','@','#','$','%','&','*',];
