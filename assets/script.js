@@ -1,4 +1,4 @@
-//var characterlength = 8;
+var characterlength = 8;
 var choiceofcharacter = [];
 
 var specialcharacter = ['?', '!','@','#','$','%','&','*',];
@@ -25,17 +25,16 @@ function writePassword() {
 }
 
 }
-
 function generatePassword() {
   //generate password based on prompts selected
   var randompassword = "";
   var password="";
   console.log(characterlength)
 for(var i = 0; i < characterlength; i++) {
-    var randompassword = (Math.random() * choiceofcharacter.length);
+    var randompassword = Math.floor(Math.random()* choiceofcharacter.length);
    password = password + choiceofcharacter[randompassword];
 }
- return randompassword;
+ return password;
 }
 
 function getprompts(){
